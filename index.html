@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auto Prestige — Showroom automobile premium à Alger. Vente, location, financement et services après-vente.">
+    <meta name="theme-color" content="#0d0d0d">
+    <title>Auto Prestige — Showroom Automobile Premium | Alger</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <span class="preloader-text">AUTO PRESTIGE</span>
+        </div>
+    </div>
+
+    <!-- Top bar -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-left">
+                <a href="tel:+213555123456"><i class="fa-solid fa-phone"></i> <span>+213 555 12 34 56</span></a>
+                <a href="mailto:contact@autoprestige.dz"><i class="fa-solid fa-envelope"></i> <span>contact@autoprestige.dz</span></a>
+            </div>
+            <div class="topbar-right">
+                <span class="open-badge" id="openBadge">
+                    <span class="open-dot"></span>
+                    <span data-i18n="closed">Fermé</span>
+                </span>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">ع</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-mark">A<span>P</span></span>
+                <span class="logo-text">
+                    <span class="logo-title">Auto Prestige</span>
+                    <span class="logo-sub" data-i18n="logoSub">Showroom Automobile</span>
+                </span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" data-i18n="navHome">Accueil</a></li>
+                    <li><a href="#services" data-i18n="navServices">Services</a></li>
+                    <li><a href="#shop" data-i18n="navShop">Véhicules</a></li>
+                    <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
+                    <li><a href="#testimonials" data-i18n="navTesti">Avis</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn cart-btn" id="cartBtn" aria-label="Panier">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80">
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="hero-eyebrow" data-i18n="heroEyebrow">— Showroom Premium Alger —</span>
+            <h1 class="hero-title">
+                <span data-i18n="heroTitle1">L'excellence</span>
+                <span class="hero-title-accent" data-i18n="heroTitle2">automobile</span>
+            </h1>
+            <p class="hero-sub" data-i18n="heroSub">Véhicules neufs et d'occasion sélectionnés, financement sur mesure, service après-vente premium.</p>
+            <div class="hero-cta">
+                <a href="#shop" class="btn btn-primary">
+                    <span data-i18n="heroCta1">Découvrir nos véhicules</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/213555123456" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-i18n="heroCta2">Nous contacter</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-count="350">0</span>+
+                    <span class="stat-label" data-i18n="stat1">Véhicules vendus</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-count="15">0</span>+
+                    <span class="stat-label" data-i18n="stat2">Ans d'expérience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num" data-count="98">0</span>%
+                    <span class="stat-label" data-i18n="stat3">Clients satisfaits</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#services" class="hero-scroll" aria-label="Scroll">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+        <div class="parallax-bg" data-parallax="0.3"></div>
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="servicesEyebrow">— Nos services —</span>
+                <h2 class="section-title" data-i18n="servicesTitle">Un accompagnement complet</h2>
+                <p class="section-sub" data-i18n="servicesSub">De l'achat à l'entretien, nous nous occupons de tout pour votre tranquillité.</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+                    <h3 data-i18n="svc1Title">Vente de véhicules</h3>
+                    <p data-i18n="svc1Desc">Large choix de véhicules neufs et d'occasion rigoureusement sélectionnés et contrôlés.</p>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h3 data-i18n="svc2Title">Financement sur mesure</h3>
+                    <p data-i18n="svc2Desc">Solutions de crédit adaptées à votre budget, avec nos partenaires bancaires.</p>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 data-i18n="svc3Title">Garantie & assurance</h3>
+                    <p data-i18n="svc3Desc">Tous nos véhicules sont garantis. Assurance tous risques négociée au meilleur prix.</p>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 data-i18n="svc4Title">Service après-vente</h3>
+                    <p data-i18n="svc4Desc">Atelier agréé, pièces d'origine, techniciens certifiés pour l'entretien de votre véhicule.</p>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3 data-i18n="svc5Title">Immatriculation</h3>
+                    <p data-i18n="svc5Desc">Démarches administratives complètes : carte grise, plaque, assurance et livraison.</p>
+                </article>
+
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <h3 data-i18n="svc6Title">Reprise véhicule</h3>
+                    <p data-i18n="svc6Desc">Reprise de votre ancien véhicule au meilleur prix du marché, estimation gratuite.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP / CATALOG -->
+    <section class="section shop" id="shop">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="shopEyebrow">— Notre catalogue —</span>
+                <h2 class="section-title" data-i18n="shopTitle">Véhicules en vedette</h2>
+                <p class="section-sub" data-i18n="shopSub">Découvrez notre sélection premium. Ajoutez vos favoris au panier pour demander un devis.</p>
+            </div>
+
+            <div class="shop-filters" id="shopFilters">
+                <button class="filter-btn active" data-filter="all" data-i18n="fAll">Tous</button>
+                <button class="filter-btn" data-filter="suv" data-i18n="fSuv">SUV</button>
+                <button class="filter-btn" data-filter="sedan" data-i18n="fSedan">Berline</button>
+                <button class="filter-btn" data-filter="sport" data-i18n="fSport">Sport</button>
+                <button class="filter-btn" data-filter="electric" data-i18n="fElec">Électrique</button>
+                <button class="filter-btn" data-filter="accessory" data-i18n="fAcc">Accessoires</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+        <div class="parallax-bg gallery-bg" data-parallax="0.2"></div>
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="galleryEyebrow">— Notre showroom —</span>
+                <h2 class="section-title" data-i18n="galleryTitle">Galerie photos</h2>
+                <p class="section-sub" data-i18n="gallerySub">Plongez dans l'univers Auto Prestige.</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <a href="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=80" class="gallery-item tall reveal" data-caption="Showroom principal">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" alt="Showroom" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80" class="gallery-item reveal" data-caption="Berline premium">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Berline" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&q=80" class="gallery-item reveal" data-caption="Voiture sport">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80" alt="Sport" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1600&q=80" class="gallery-item wide reveal" data-caption="SUV de luxe">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80" alt="SUV" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=80" class="gallery-item reveal" data-caption="Intérieur cuir">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=800&q=80" alt="Intérieur" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1600&q=80" class="gallery-item tall reveal" data-caption="Cabine sport">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80" alt="Cabine" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1600&q=80" class="gallery-item reveal" data-caption="Compacte urbaine">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80" alt="Compacte" loading="lazy">
+                </a>
+                <a href="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=80" class="gallery-item reveal" data-caption="Atelier service">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80" alt="Atelier" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow" data-i18n="testiEyebrow">— Ils nous font confiance —</span>
+                <h2 class="section-title" data-i18n="testiTitle">Avis de nos clients</h2>
+            </div>
+
+            <div class="testi-grid">
+                <article class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text" data-i18n="t1Text">"Service exceptionnel du début à la fin. J'ai trouvé la voiture de mes rêves à un prix très correct. L'équipe est professionnelle et à l'écoute."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">KA</div>
+                        <div>
+                            <strong>Karim A.</strong>
+                            <span>Alger</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text" data-i18n="t2Text">"Le financement a été rapide et le service après-vente est irréprochable. Je recommande Auto Prestige à toutes les personnes sérieuses."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">SB</div>
+                        <div>
+                            <strong>Sophie B.</strong>
+                            <span>Hydra</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text" data-i18n="t3Text">"Achat d'un SUV d'occasion en parfait état. Aucune mauvaise surprise, tout transparent. Une vraie référence à Alger."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">MH</div>
+                        <div>
+                            <strong>Mohamed H.</strong>
+                            <span>Bouzareah</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / MAP -->
+    <section class="section contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info reveal">
+                <span class="section-eyebrow" data-i18n="contactEyebrow">— Venez nous rendre visite —</span>
+                <h2 class="section-title" data-i18n="contactTitle">Notre showroom</h2>
+                <p class="contact-text" data-i18n="contactText">Nous vous accueillons du samedi au jeudi dans notre showroom moderne à Hydra. Toute l'équipe est à votre disposition.</p>
+
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong data-i18n="addrLabel">Adresse</strong>
+                            <span data-i18n="addr">Rue Didouche Mourad, Hydra, Alger, Algérie</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong data-i18n="phoneLabel">Téléphone</strong>
+                            <a href="tel:+213555123456">+213 555 12 34 56</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <a href="https://wa.me/213555123456" target="_blank" rel="noopener">+213 555 12 34 56</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong data-i18n="hoursLabel">Horaires</strong>
+                            <span data-i18n="hours">Sam - Jeu : 09h00 - 18h00</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="contact-actions">
+                    <a href="https://wa.me/213555123456" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span data-i18n="ctaWhatsapp">Discuter sur WhatsApp</span>
+                    </a>
+                    <a href="tel:+213555123456" class="btn btn-outline">
+                        <i class="fa-solid fa-phone"></i>
+                        <span data-i18n="ctaCall">Appeler maintenant</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-map reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.0!2d3.0870!3d36.7538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ1JzEzLjciTiAzwrAwNScxMy4yIkU!5e0!3m2!1sfr!2sdz!4v1700000000000!5m2!1sfr!2sdz"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Auto Prestige - Hydra, Alger">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="cta-banner">
+        <div class="container cta-banner-inner">
+            <div>
+                <h2 data-i18n="bannerTitle">Prêt à trouver votre prochaine voiture ?</h2>
+                <p data-i18n="bannerSub">Contactez-nous sur WhatsApp pour un devis personnalisé en quelques minutes.</p>
+            </div>
+            <a href="https://wa.me/213555123456" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="bannerBtn">WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <a href="#home" class="logo">
+                    <span class="logo-mark">A<span>P</span></span>
+                    <span class="logo-text">
+                        <span class="logo-title">Auto Prestige</span>
+                        <span class="logo-sub" data-i18n="logoSub">Showroom Automobile</span>
+                    </span>
+                </a>
+                <p data-i18n="footerAbout">Showroom automobile premium à Alger. Vente, location, financement et service après-vente depuis 2009.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footerNav">Navigation</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="navHome">Accueil</a></li>
+                    <li><a href="#services" data-i18n="navServices">Services</a></li>
+                    <li><a href="#shop" data-i18n="navShop">Véhicules</a></li>
+                    <li><a href="#gallery" data-i18n="navGallery">Galerie</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footerHours">Horaires</h4>
+                <ul class="hours-list">
+                    <li><span data-i18n="dSat">Samedi - Jeudi</span><span>09:00 - 18:00</span></li>
+                    <li><span data-i18n="dFri">Vendredi</span><span data-i18n="dFriV">Fermé</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footerLegal">Informations légales</h4>
+                <ul class="legal-list">
+                    <li><span>RC :</span> 16/00-0123456 B 09</li>
+                    <li><span>NIF :</span> 001216012345678</li>
+                    <li><span>NIS :</span> 001216120000045</li>
+                    <li><span>AI :</span> 1609H-20160101</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© <span id="year"></span> Auto Prestige. <span data-i18n="rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/213555123456" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp" id="whatsappFloat">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-head">
+            <h3><i class="fa-solid fa-bag-shopping"></i> <span data-i18n="cartTitle">Mon panier</span></h3>
+            <button class="icon-btn" id="cartClose" aria-label="Fermer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="cart-body" id="cartBody"></div>
+        <div class="cart-foot">
+            <div class="cart-total">
+                <span data-i18n="total">Total</span>
+                <strong id="cartTotal">0 DA</strong>
+            </div>
+            <button class="btn btn-whatsapp btn-block" id="cartCheckout">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="checkout">Commander via WhatsApp</span>
+            </button>
+            <button class="btn btn-ghost btn-block" id="cartClear" data-i18n="clear">Vider le panier</button>
+        </div>
+    </aside>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Précédent"><i class="fa-solid fa-chevron-left"></i></button>
+        <img class="lightbox-img" id="lightboxImg" alt="">
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Suivant"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
